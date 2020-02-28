@@ -9,8 +9,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  $persian-red: #C0392B;
-
   .heart {
     background-color: $persian-red;
     height: 14px;

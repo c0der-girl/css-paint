@@ -21,11 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-  $midnight-express: #17202A;
-  $zircon: #EAECEE;
-  $moon-yellow: #F1C40F;
-  $persian-red: #C0392B;
-
   @font-face {
     font-family: Amatic;
     font-display: swap;
