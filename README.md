@@ -2,6 +2,8 @@
 
 Playground for css images
 
+![Screenshot](screenshot.png)
+
 ## Project setup
 ```
 npm install

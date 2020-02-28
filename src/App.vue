@@ -46,6 +46,10 @@ export default {
       font-weight: bold;
     }
 
+    h2 {
+      font-size: 2em;
+    }
+
     a {
       font-size: 1.5em;
       color: $moon-yellow;
@@ -70,4 +74,5 @@ export default {
       padding: 30px 0;
     }
   }
+
 </style>
