@@ -78,7 +78,7 @@
 <script>
 export default {
   name: 'Cat',
-}
+};
 </script>
 
 <style scoped lang="scss">
@@ -252,6 +252,7 @@ export default {
           bottom: 10%;
           background: $iris-color;
           border-radius: 50%;
+          animation: move-pupils 5s infinite;
 
           &:after {
             content: '';
@@ -262,6 +263,24 @@ export default {
             width: 35%;
             background: $eye-color;
             border-radius: 50%;
+          }
+
+          @keyframes move-pupils {
+            0% {
+              transform: translate(0)
+            }
+            5% {
+              transform: translate(-100%, -25%)
+            }
+            10% {
+              transform: translate(50%, -25%)
+            }
+            20% {
+              transform: translate(-100%, -25%)
+            }
+            25% {
+              transform: translate(0, 0)
+            }
           }
         }
 

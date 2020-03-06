@@ -28,10 +28,14 @@
       </div>
 
       <div class="eye left">
-        <div class="pupil"></div>
+        <div class="iris">
+          <div class="pupil"></div>
+        </div>
       </div>
       <div class="eye right">
-        <div class="pupil"></div>
+        <div class="iris">
+          <div class="pupil"></div>
+        </div>
       </div>
 
       <div class="snout">
@@ -213,7 +217,7 @@ export default {
           border-radius: 35% 65% 65% 35% / 50% 50% 50% 50%;
         }
 
-        .pupil {
+        .iris {
           position: absolute;
           left: 45%;
           width: 50%;
@@ -222,14 +226,44 @@ export default {
           background: $iris-color;
           border-radius: 50%;
 
-          &:after {
-            content: '';
+          .pupil {
             position: absolute;
             top: 30%;
+            right: 0;
             height: 35%;
             width: 35%;
             background: $fur-shading-color;
             border-radius: 50%;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: -3%;
+            left: 0;
+            height: 0;
+            width: 100%;
+            background: $fur-shading-color;
+            border-radius: 50%;
+            animation: blink 5s infinite ease-in;
+          }
+
+          @keyframes blink {
+            80% {
+              height: 0;
+            }
+            85% {
+              height: 100%;
+            }
+            90% {
+              height: 0;
+            }
+            95% {
+              height: 100%;
+            }
+            100% {
+              height: 0;
+            }
           }
         }
       }
