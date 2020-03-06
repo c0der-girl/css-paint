@@ -3,6 +3,7 @@
     <h1>Paint in CSS</h1>
     <div class="nav">
       <router-link to="/">Cat</router-link> |
+      <router-link to="/donkey">Donkey</router-link> |
       <router-link to="/info">Info</router-link>
     </div>
     <router-view/>
