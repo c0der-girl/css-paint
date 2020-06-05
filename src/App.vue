@@ -4,6 +4,7 @@
     <div class="nav">
       <router-link to="/">Cat</router-link> |
       <router-link to="/donkey">Donkey</router-link> |
+      <router-link to="/owl">Owl</router-link> |
       <router-link to="/info">Info</router-link>
     </div>
     <router-view/>
